@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f6;
+    color: #4b2e2e;
+}
+
+/* Encabezado */
+header {
+    background: #f8d7da;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    color: #8b3a4a;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Menú */
+nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #8b3a4a;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #b45f72;
+    font-size: 32px;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ddd;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.producto button {
+    background: #b45f72;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Botones */
+button {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #f8d7da;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+}
