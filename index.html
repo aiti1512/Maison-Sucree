@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison sucrée | Repostería Fina & Moderna</title>
+    <!-- Tipografías Elegantes y Modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Maison sucrée<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#sabores">Sabores</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Pastelería Artesanal & Premium</span>
+            <h1>Diseños modernos,<br>sabores inolvidables.</h1>
+            <p>Creamos experiencias dulces de alta calidad para tus momentos más especiales.</p>
+            <div class="hero-btns">
+                <a href="#catalogo" class="btn btn-primary">Ver Catálogo Completo</a>
+                <a href="#contacto" class="btn btn-secondary">Pedir por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO COMPLETO Y CORREGIDO -->
+    <section id="catalogo" class="section-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras Creaciones</h2>
+                <p>Explora la selección con ingredientes seleccionados de primera calidad.</p>
+            </div>
+            
+            <div class="grid-catalogo">
+                <!-- Producto 1: Torta Chocolate -->
+                <div class="card-producto" onclick="abrirModal('torta-chocolate')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Torta Supreme de Chocolate">
+                        <span class="tag">Más Vendido</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Torta Supreme de Chocolate</h3>
+                        <div class="rating">★★★★★ <span>(4.9)</span></div>
+                        <p class="precio">$3.500</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Lemon Pie -->
+                <div class="card-producto" onclick="abrirModal('lemon-pie')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" alt="Lemon Pie Gourmet">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lemon Pie Gourmet</h3>
+                        <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                        <p class="precio">$2.800</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Red Velvet Cupcakes -->
+                <div class="card-producto" onclick="abrirModal('cupcakes-velvet')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80" alt="Box de Red Velvet Cupcakes">
+                        <span class="tag">Nuevo</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Box Red Velvet (x6)</h3>
+                        <div class="rating">★★★★★ <span>(5.0)</span></div>
+                        <p class="precio">$2.200</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Macarons -->
+                <div class="card-producto" onclick="abrirModal('macarons-box')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80" alt="Caja de Macarons Franceses">
+                    </div>
+                    <div class="card-body">
+                        <h3>Macarons Surtidos (x12)</h3>
+                        <div class="rating">★★★★★ <span>(4.8)</span></div>
+                        <p class="precio">$3.900</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Cheesecake Frutos Rojos -->
+                <div class="card-producto" onclick="abrirModal('cheesecake-frutos')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80" alt="Cheesecake Frutos Rojos">
+                    </div>
+                    <div class="card-body">
+                        <h3>Cheesecake Frutos Rojos</h3>
+                        <div class="rating">★★★★★ <span>(4.9)</span></div>
+                        <p class="precio">$3.200</p>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Pavlova / Frutillas -->
+                <div class="card-producto" onclick="abrirModal('torta-frutillas')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80" alt="Pavlova de Frutillas">
+                    </div>
+                    <div class="card-body">
+                        <h3>Pavlova & Frutillas</h3>
+                        <div class="rating">★★★★☆ <span>(4.6)</span></div>
+                        <p class="precio">$3.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE FOTOS DULCE -->
+    <section id="galeria" class="galeria-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería Dulce</h2>
+                <p>Echa un vistazo a nuestros últimos trabajos y presentaciones.</p>
+            </div>
+            <div class="grid-galeria">
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" alt="Pastel de diseño">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Galletas artesanales">
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="Torta decorada">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Pastelería gourmet">
+            </div>
+        </div>
+    </section>
+
+    <!-- SABORES -->
+    <section id="sabores" class="sabores-section">
+        <div class="container">
+            <div class="section-header text-white">
+                <h2>Combinaciones Exclusivas</h2>
+                <p>Personaliza tu torta a medida con nuestras opciones premium.</p>
+            </div>
+            <div class="grid-sabores">
+                <div class="sabores-card">
+                    <i class="fa-solid fa-cake-candles icon-sabor"></i>
+                    <h3>Bases de Bizcochuelo</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Vainilla Bourbon de Madagascar</li>
+                        <li><i class="fa-solid fa-check"></i> Cacao Intenso 70% Cacao</li>
+                        <li><i class="fa-solid fa-check"></i> Velvet Sedoso</li>
+                        <li><i class="fa-solid fa-check"></i> Cítrico de Limón y Amapolas</li>
+                    </ul>
+                </div>
+                <div class="sabores-card">
+                    <i class="fa-solid fa-fill-drip icon-sabor"></i>
+                    <h3>Rellenos Especiales</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Dulce de Leche Artesanal</li>
+                        <li><i class="fa-solid fa-check"></i> Ganache de Chocolate Belga</li>
+                        <li><i class="fa-solid fa-check"></i> Cream Cheese & Frutos del Bosque</li>
+                        <li><i class="fa-solid fa-check"></i> Curd de Maracuyá Cítrico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL COMPLETA -->
+    <div id="modalProducto" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="cerrarModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img id="modal-foto" src="" alt="Producto">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-titulo">Título</h2>
+                    <div class="modal-rating">
+                        <span id="modal-estrellas"></span>
+                        <span id="modal-nota"></span>
+                    </div>
+                    <p class="modal-precio" id="modal-precio"></p>
+                    
+                    <h4>Detalles</h4>
+                    <p id="modal-descripcion"></p>
+
+                    <h4>Reseñas de Clientes</h4>
+                    <div class="comentarios-box" id="modal-comentarios"></div>
+
+                    <a href="#" id="btn-encargar-whatsapp" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Encargar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="container footer-content">
+            <h2 class="logo-footer">Maison sucrée<span>.</span></h2>
+            <p>Repostería fina, arte y dulzura en cada detalle.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fab fa-instagram"></i> Síguenos en Instagram
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Maison sucrée. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
